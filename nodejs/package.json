@@ -1,0 +1,35 @@
+{
+  "name": "@fsoft/diff-patch",
+  "version": "0.1.1",
+  "description": "Deep compare two objects and produces a diffData to transform object1 to object2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsoft72/diff-patch.git"
+  },
+  "keywords": [
+    "diff",
+    "patch",
+    "node.js",
+    "typescript",
+    "python3"
+  ],
+  "author": "Fabio Rotondo <fabio.rotondo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fsoft72/diff-patch/issues"
+  },
+  "homepage": "https://github.com/fsoft72/diff-patch#readme",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
