@@ -1,1 +1,4 @@
 /nodejs/node_modules
+/python3/build
+/python3/dist
+/python3/*.egg-info
