@@ -23,6 +23,14 @@ More languages will be added in the future, contributions are welcome.
 
 ### TypeScript
 
+To install the TypeScript version of diff-patch, run:
+
+```bash
+npm install @fsoft/diff-patch
+```
+
+Then, in your TypeScript code:
+
 ```typescript
 import { diff, patch } from '@fsoft/diff-patch';
 
@@ -52,9 +60,20 @@ console.log( "diffData: ", diffData);
 
 // apply the diff data to obj1 to get an object that is the same as obj2
 const obj3 = patch(obj1, diffData);
+
+// show the result for debugging
+console.log( "obj3: ", obj3);
 ```
 
 ### Python3
+
+To install the Python3 version of diff-patch, run:
+
+```bash
+pip install diff-patch
+```
+
+Then, in your Python code:
 
 ```python
 
@@ -86,6 +105,9 @@ print("diff_data: ", diff_data)
 
 # apply the diff data to obj1 to get an object that is the same as obj2
 obj3 = patch(obj1, diff_data)
+
+# show the result for debugging
+print("obj3: ", obj3)
 ```
 
 
