@@ -16,7 +16,8 @@ The `diff` and `patch` functions are implemented in the following languages:
   * TypeScript
   * Python3
 
-And the `diffData` object can be used interchangeably between the languages.
+The `diffData` object **can be used interchangeably between the languages**.\
+This makes this library very useful for networked applications, where the client and server are written in different languages.
 
 `diffData` can be serialized to JSON and deserialized back to an object. It aims to be as small as possible, and is designed to be used in a networked environment.
 
@@ -145,3 +146,21 @@ if not diff_data:
   print("The objects are the same")
 ```
 
+## Contributors
+
+This library was created by [Fabio Rotondo](https://github.com/fsoft72).
+
+New language implementations are more than welcome.\
+Please open an issue or a pull request if you want to contribute.
+
+**Collaborators**:
+
+  * [Nikola Gluhovic](https://github.com/nini-os)
+
+
+The official repository for this library is [here](https://github.com/fsoft72/diff-patch).
+
+## License
+
+This library is licensed under the MIT License.\
+See the [LICENSE](LICENSE) file for details.
