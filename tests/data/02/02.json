@@ -1,0 +1,46 @@
+{
+    "name": "Product 2",
+    "category": "Electronics",
+    "price": 1200,
+    "features": {
+        "color": "Silver",
+        "screen": {
+            "type": "LCD",
+            "size": "21 inch",
+            "resolution": "1280x720"
+        },
+        "weight": 5,
+        "dimensions": {
+            "height": "30 cm",
+            "width": "50 cm"
+        },
+        "connectivity": {
+            "wifi": true,
+            "bluetooth": true
+        },
+        "warranty": {
+            "length": 1,
+            "start": "2023-03-01"
+        }
+    },
+    "reviews": [
+        {
+            "user": "Bob",
+            "comment": "Terrible product",
+            "rating": 1,
+            "date": "2023-03-01"
+        },
+        {
+            "user": "Alice",
+            "comment": "Excellent product",
+            "rating": 5,
+            "date": "2023-03-05"
+        },
+        {
+            "user": "David",
+            "comment": "Good product for the price",
+            "rating": 4,
+            "date": "2023-03-10"
+        }
+    ]
+}

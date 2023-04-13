@@ -1,0 +1,58 @@
+{
+    "name": "Product 1",
+    "category": "Electronics",
+    "price": 1500,
+    "features": {
+        "color": "Black",
+        "screen": {
+            "type": "LED",
+            "size": "24 inch",
+            "resolution": "1920x1080"
+        },
+        "weight": 6.5,
+        "dimensions": {
+            "height": "35 cm",
+            "width": "55 cm",
+            "depth": "15 cm",
+            "weightCapacity": 50
+        },
+        "ports": [
+            {
+                "name": "HDMI",
+                "version": 2
+            },
+            {
+                "name": "USB",
+                "version": 3
+            },
+            {
+                "name": "Ethernet",
+                "version": 2.5
+            }
+        ],
+        "connectivity": {
+            "wifi": true,
+            "bluetooth": false,
+            "nfc": true
+        },
+        "warranty": {
+            "length": 2,
+            "start": "2023-01-01",
+            "end": "2024-01-01"
+        }
+    },
+    "reviews": [
+        {
+            "user": "John",
+            "comment": "Great product",
+            "rating": 4,
+            "date": "2023-02-15"
+        },
+        {
+            "user": "Jane",
+            "comment": "Average product",
+            "rating": 3,
+            "date": "2023-02-20"
+        }
+    ]
+}

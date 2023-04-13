@@ -1,0 +1,43 @@
+{
+    "make": "Tesla",
+    "model": "Model S",
+    "year": 2023,
+    "bodyStyle": "Sedan",
+    "color": "Red",
+    "engine": {
+        "type": "Electric",
+        "power": 750,
+        "torque": 700,
+        "battery": {
+            "capacity": 110,
+            "type": "Lithium-Ion",
+            "range": 400
+        }
+    },
+    "transmission": "Single-speed",
+    "interior": {
+        "seats": {
+            "material": "Leather",
+            "color": "Black",
+            "heated": true
+        },
+        "dashboard": {
+            "display": {
+                "size": "17 inch",
+                "type": "Touchscreen"
+            },
+            "audioSystem": {
+                "speakers": 12,
+                "type": "Premium"
+            }
+        }
+    },
+    "safety": {
+        "airbags": 8,
+        "sensors": {
+            "blindSpot": true,
+            "forwardCollision": true,
+            "laneDeparture": true
+        }
+    }
+}

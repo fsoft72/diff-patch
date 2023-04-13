@@ -1,0 +1,28 @@
+{
+    "name": "Product 1",
+    "category": "Electronics",
+    "price": 1000,
+    "features": {
+        "color": "Black",
+        "screen": "20 inch",
+        "resolution": "1920x1080",
+        "weight": "5 kg",
+        "dimensions": {
+            "height": "30 cm",
+            "width": "50 cm",
+            "depth": "10 cm"
+        }
+    },
+    "reviews": [
+        {
+            "user": "John",
+            "comment": "Great product",
+            "rating": 4
+        },
+        {
+            "user": "Jane",
+            "comment": "Average product",
+            "rating": 3
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "name": "Product 2",
+    "category": "Electronics",
+    "price": 1200,
+    "features": {
+        "color": "Silver",
+        "screen": "24 inch",
+        "resolution": "2560x1440",
+        "weight": "7 kg",
+        "dimensions": {
+            "height": "40 cm",
+            "width": "60 cm",
+            "depth": "15 cm"
+        }
+    },
+    "reviews": [
+        {
+            "user": "John",
+            "comment": "Great product",
+            "rating": 4
+        },
+        {
+            "user": "Jane",
+            "comment": "Average product",
+            "rating": 3
+        },
+        {
+            "user": "Bob",
+            "comment": "Terrible product",
+            "rating": 1
+        },
+        {
+            "user": "Alice",
+            "comment": "Excellent product",
+            "rating": 5
+        },
+        {
+            "user": "David",
+            "comment": "Good product for the price",
+            "rating": 4
+        }
+    ]
+}
