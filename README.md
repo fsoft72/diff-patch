@@ -4,9 +4,12 @@
 
 diff-patch is a library that exposes two functions, `diff` and `patch`.
 
-The `diff` function takes two objects and deep compares them, returning an object that represents the difference between the two (the `diffData`).
+The library does not have any dependencies.
 
-The `patch` function takes an object and a diff object and applies the diff to the object, returning a new object.
+The `diff` function takes two objects (`obj1` and `obj2`) and deep compares them, returning an object that represents the difference between the two (the `diffData`).
+`diffData` is an object that can be used to apply the diff to `obj1` to get an object that is the same as `obj2`.
+
+The `patch` function takes an `obj` and a `diffData` object and applies the diff to the object, returning a new object.
 
 The `diff` and `patch` functions are implemented in the following languages:
 
@@ -70,14 +73,14 @@ console.log( "obj3: ", obj3);
 To install the Python3 version of diff-patch, run:
 
 ```bash
-pip install diff-patch
+pip install fsoft-diff-patch
 ```
 
 Then, in your Python code:
 
 ```python
 
-from diff_patch import diff, patch
+from fsoft_diff_patch import diff, patch
 
 obj1 = {
   'a': 1,
@@ -110,4 +113,35 @@ obj3 = patch(obj1, diff_data)
 print("obj3: ", obj3)
 ```
 
+### Hint
+
+The `diff` function can be used to see if two objects are the same, by comparing the result of `diff` to an empty object.
+
+```python
+from diff_patch import diff
+
+obj1 = {
+  'a': 1,
+  'b': 2,
+  'c': {
+    'd': 3,
+    'e': 4,
+  },
+}
+
+obj2 = {
+  'a': 1,
+  'b': 2,
+  'c': {
+    'd': 3,
+    'e': 4,
+  },
+}
+
+diff_data = diff(obj1, obj2)
+
+# if the objects are the same, diff_data will be an empty object
+if not diff_data:
+  print("The objects are the same")
+```
 
