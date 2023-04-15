@@ -33,9 +33,9 @@ void main() {
   // print diffData in the console
   print("DIFF DATA\n${json.encode(diffData)}");
   // apply diffData to a and create a new object
-  final patched_a = patch(a, diffData);
+  final patchedObj = patch(a, diffData);
   // print patched_a in the console
-  print("\n\nPATCHED OBJ\n${json.encode(patched_a)}");
+  print("\n\nPATCHED OBJ\n${json.encode(patchedObj)}");
   // check if patched_a is equal to b
-  print("\n\nSAME OBJECT: ${json.encode(patched_a) == json.encode(b)}");
+  print("\n\nSAME OBJECT: ${json.encode(patchedObj) == json.encode(b)}");
 }
