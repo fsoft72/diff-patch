@@ -2,6 +2,7 @@ name: fsoft_diff_patch
 description: Deep compare two objects and produces a diffData to transform object1 to object2
 version: 0.1.0
 repository: https://github.com/fsoft72/diff-patch
+license: MIT
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
