@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import '../../dart/diff-patch.dart';
+import '../../dart/lib/fsoft_diff_patch.dart';
 
 void main() {
   final a = {
