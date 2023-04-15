@@ -37,7 +37,7 @@ dart pub add fsoft_diff_patch
 Then, in your Dart code:
 
 ```dart
-import { diff, patch } from '@fsoft/diff-patch';
+import 'package:fsoft_diff_patch/fsoft_diff_patch.dart';
 
 void main() {
   final a = {
