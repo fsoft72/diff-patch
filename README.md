@@ -15,7 +15,7 @@ The `diff` and `patch` functions are implemented in the following languages:
 
   * TypeScript
   * Python3
-  * Dart (experimental)
+  * Dart
 
 The `diffData` object **can be used interchangeably between the languages**.\
 This makes this library very useful for networked applications, where the client and server are written in different languages.
