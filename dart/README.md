@@ -26,48 +26,56 @@ More languages will be added in the future, contributions are welcome.
 
 ## Usage
 
-### TypeScript
+### Dart
 
-To install the TypeScript version of diff-patch, run:
+To install the Dart version of diff-patch, run:
 
 ```bash
-npm install @fsoft/diff-patch
+dart pub add fsoft_diff_patch
 ```
 
-Then, in your TypeScript code:
+Then, in your Dart code:
 
-```typescript
-import { diff, patch } from '@fsoft/diff-patch';
+```dart
+import 'package:fsoft_diff_patch/fsoft_diff_patch.dart';
 
-const obj1 = {
-  a: 1,
-  b: 2,
-  c: {
-    d: 3,
-    e: 4,
-  },
-};
-
-const obj2 = {
-  a: 1,
-  b: 2,
-  c: {
-    d: 3,
-    e: 5,   // changed
-  },
-};
-
-// create the diff data
-const diffData = diff(obj1, obj2);
-
-// show the diff data for debugging
-console.log( "diffData: ", diffData);
-
-// apply the diff data to obj1 to get an object that is the same as obj2
-const obj3 = patch(obj1, diffData);
-
-// show the result for debugging
-console.log( "obj3: ", obj3);
+void main() {
+  final a = {
+    "a": 1,
+    "b": 2,
+    "c": {
+      "d": 3,
+      "e": 4,
+      "f": {
+        "g": 5,
+        "h": 6,
+      },
+    },
+  };
+  final b = {
+    "a": 1,
+    // "b": 2, // b is deleted
+    "c": {
+      "d": 9, // d is changed
+      "e": 4,
+      "f": {
+        "g": 5,
+        "h": 7, // h is changed
+        "i": 10, // i is added
+      },
+    },
+  };
+  // diff a and b and create a diffData object
+  final diffData = diff(a, b);
+  // print diffData in the console
+  print("DIFF DATA\n${json.encode(diffData)}");
+  // apply diffData to a and create a new object
+  final patched_a = patch(a, diffData);
+  // print patched_a in the console
+  print("\n\nPATCHED OBJ\n${json.encode(patched_a)}");
+  // check if patched_a is equal to b
+  print("\n\nSAME OBJECT: ${json.encode(patched_a) == json.encode(b)}");
+}
 ```
 
 ## Contributors

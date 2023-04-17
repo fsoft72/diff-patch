@@ -2,3 +2,4 @@
 /python3/build
 /python3/dist
 /python3/*.egg-info
+/dart/.dart_tool
