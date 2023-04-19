@@ -2,5 +2,5 @@
 
 npm version patch
 npm run build
-npm login
+#npm login
 npm publish --access public

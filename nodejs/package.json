@@ -1,6 +1,6 @@
 {
   "name": "@fsoft/diff-patch",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Deep compare two objects and produces a diffData to transform object1 to object2",
   "repository": {
     "type": "git",
