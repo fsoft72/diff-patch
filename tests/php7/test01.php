@@ -39,8 +39,7 @@ echo "DIFF DATA\n";
 echo $diffData;
 
 // Apply diffData to a and create a new string
-$patched_a = array_replace_recursive($a, json_decode($diffData, true));
-$patched_a = array_filter_recursive($patched_a);
+$patched_a = patch($a, json_decode($diffData, true));
 $patched_a = json_encode($patched_a);
 
 // Print patched_a in the console
