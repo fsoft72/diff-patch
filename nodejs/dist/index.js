@@ -18,7 +18,7 @@ exports.patch = exports.diff = void 0;
  */
 const diff = (oldObject, newObject) => {
     var patch = {};
-    var keys = Object.keys(newObject);
+    var keys = Object.keys(newObject !== null && newObject !== void 0 ? newObject : {});
     keys.forEach((key) => {
         var oldValue = oldObject[key];
         var newValue = newObject[key];

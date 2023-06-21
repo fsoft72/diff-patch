@@ -3,3 +3,5 @@
 /python3/dist
 /python3/*.egg-info
 /dart/.dart_tool
+pnpm-lock.yaml
+*-lock.json
