@@ -36,7 +36,7 @@ export const diff = ( oldObject: any, newObject: any ) => {
 	} );
 
 	// now scan oldObject keys and delete the ones that are not present in newObject
-	keys = Object.keys( oldObject );
+	keys = Object.keys( oldObject ?? {} );
 	keys.forEach( ( key ) => {
 		if ( newObject[ key ] === undefined ) {
 			patch[ key ] = null;
